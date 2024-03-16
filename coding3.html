@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spring Flowers School</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Spring Flowers School</h1>
+        <img src="resources/images/schoollogo.jpg"  width="80" height="70">
+    </header>
+
+    <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          
+          
+        </ul>
+      </nav>
+      
+<div class="container">
+  <div id="login-form" class="form">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="login-error" class="error"></p>
+    <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Register</a></p>
+  </div>
+  <div id="register-form" class="form hidden">
+    <h2>Register</h2>
+    <input type="text" id="new-username" placeholder="Username">
+    <input type="password" id="new-password" placeholder="Password">
+    <input type="text" id="full-name" placeholder="Full Name">
+    <button onclick="register()">Register</button>
+    <p id="register-error" class="error"></p>
+    <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+    <p id="register-error" class="error"></p>
+  </div>
+  <div id="welcome" class="page hidden">
+    <h2>Welcome, <span id="welcome-username"></span>!</h2>
+    <button onclick="showMonthlyActivity()">Monthly Chart</button>
+  </div>
+  <div id="monthly-activity" class="page hidden">
+    <h2>Monthly Activities</h2>
+    <select id="subject-dropdown">
+     
+    </select>
+    <button onclick="showSubjectActivities()">Show Activities</button>
+    <ul id="activity-list"></ul>
+  </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Spring Flowers School. All rights reserved.</p>
+  </footer>
+
+
+<script src="script2.js"></script>
+</body>
+</html>
